@@ -1,0 +1,1087 @@
+2018-12-06 16:36:27.563  INFO 7824 --- [main] org.rakesh.SpringJpaApplicationTests     : Starting SpringJpaApplicationTests on TMIC-PCS3023226 with PID 7824 (started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:36:27.623  INFO 7824 --- [main] org.rakesh.SpringJpaApplicationTests     : No active profile set, falling back to default profiles: default
+2018-12-06 16:36:27.718  INFO 7824 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:36:27 IST 2018]; root of context hierarchy
+2018-12-06 16:36:30.334  INFO 7824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fd3a529c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:36:30.847  INFO 7824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:36:31.300  INFO 7824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:36:31.347  INFO 7824 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:36:31.519  INFO 7824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:36:31.596  INFO 7824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:36:31.596  INFO 7824 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:36:31.674  INFO 7824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:36:31.804  INFO 7824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:36:32.397  INFO 7824 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) ~[surefire-booter-2.21.0.jar:2.21.0]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 70 common frames omitted
+
+2018-12-06 16:36:32.400  INFO 7824 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@183459e
+2018-12-06 16:36:33.010  INFO 7824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:36:33.876  INFO 7824 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 47a9532f-0284-45f4-bdcb-f943b0640503
+
+2018-12-06 16:36:34.084  INFO 7824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d0d373, org.springframework.security.web.context.SecurityContextPersistenceFilter@5da4f9, org.springframework.security.web.header.HeaderWriterFilter@a1769d, org.springframework.security.web.csrf.CsrfFilter@c491b8, org.springframework.security.web.authentication.logout.LogoutFilter@16cedbb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d3cdbf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@907af2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52913c, org.springframework.security.web.session.SessionManagementFilter@6bd03, org.springframework.security.web.access.ExceptionTranslationFilter@1808ecd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@120bed]
+2018-12-06 16:36:36.160  INFO 7824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:36:36.597  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:36:27 IST 2018]; root of context hierarchy
+2018-12-06 16:36:36.652  WARN 7824 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:36:36.694  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:36:36.695  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:36:36.695  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:36:36.696  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:36:36.696  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:36:36.696  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:36:36.697  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:36:36.697  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:36:36.697  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:36:36.698  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:36:36.700  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:36:36.701  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:36:36.736  INFO 7824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:36:36.737  INFO 7824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:36:36.758  INFO 7824 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:36:37.591  INFO 7824 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:36:37.603  INFO 7824 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:36:37.604  INFO 7824 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:36:37.605  INFO 7824 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:36:37.737  INFO 7824 --- [main] org.rakesh.SpringJpaApplicationTests     : Started SpringJpaApplicationTests in 10.831 seconds (JVM running for 13.79)
+2018-12-06 16:36:37.944  INFO 7824 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:36:27 IST 2018]; root of context hierarchy
+2018-12-06 16:36:37.953  INFO 7824 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:36:37.954  INFO 7824 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-06 16:36:38.007  INFO 7824 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-06 16:37:26.642  INFO 6524 --- [main] org.rakesh.SpringJpaApplication          : Starting SpringJpaApplication on TMIC-PCS3023226 with PID 6524 (D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa\target\classes started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:37:26.645  INFO 6524 --- [main] org.rakesh.SpringJpaApplication          : No active profile set, falling back to default profiles: default
+2018-12-06 16:37:26.685  INFO 6524 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c5cc4c: startup date [Thu Dec 06 16:37:26 IST 2018]; root of context hierarchy
+2018-12-06 16:37:27.887  INFO 6524 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c849b766] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:37:28.426  INFO 6524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-06 16:37:28.537  INFO 6524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-06 16:37:28.553  INFO 6524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-06 16:37:28.553  INFO 6524 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin/client;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin;D:/GEGDC/RN551626/Java/JRE1.8.0-151/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\GEGDC\RN551626\nodejs\;D:\GEGDC\RN551626\Cloud Foundry;C:\Program Files\Cloud Foundry;D:\GEGDC\RN551626\Softwares\Cloud Foundry;D:\GEGDC\RN551626\Softwares\GIT1\cmd;D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;D:\GEGDC\RN551626\Softwares\Git\bin;D:\GEGDC\RN551626\Softwares\Git\cmd;D:\GEGDC\RN551626\Softwares\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32\sts-bundle\sts-3.9.2.RELEASE;;.]
+2018-12-06 16:37:28.670  INFO 6524 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-06 16:37:28.670  INFO 6524 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1985 ms
+2018-12-06 16:37:29.301  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-06 16:37:29.301  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-06 16:37:29.301  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-06 16:37:29.302  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-06 16:37:29.302  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-06 16:37:29.302  INFO 6524 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-06 16:37:29.303  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-06 16:37:29.303  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sampleFilter' to: [/*]
+2018-12-06 16:37:29.303  INFO 6524 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-06 16:37:29.381  INFO 6524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:37:29.486  INFO 6524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:37:29.553  INFO 6524 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:37:29.569  INFO 6524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:37:29.611  INFO 6524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:37:29.612  INFO 6524 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:37:29.655  INFO 6524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:37:29.774  INFO 6524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:37:29.877  INFO 6524 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.rakesh.SpringJpaApplication.main(SpringJpaApplication.java:16) ~[classes/:na]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 44 common frames omitted
+
+2018-12-06 16:37:29.879  INFO 6524 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@f730b2
+2018-12-06 16:37:30.226  INFO 6524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:37:30.629  INFO 6524 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0d43039a-0d0a-468e-9c6c-d6af253629c4
+
+2018-12-06 16:37:30.747  INFO 6524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@92c3b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ad25f5, org.springframework.security.web.header.HeaderWriterFilter@6b4a7, org.springframework.security.web.csrf.CsrfFilter@3883c4, org.springframework.security.web.authentication.logout.LogoutFilter@122012, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60a7a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d7386b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f4cbe1, org.springframework.security.web.session.SessionManagementFilter@114e99e, org.springframework.security.web.access.ExceptionTranslationFilter@3c97ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10232b0]
+2018-12-06 16:37:30.815  INFO 6524 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:37:31.079  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c5cc4c: startup date [Thu Dec 06 16:37:26 IST 2018]; root of context hierarchy
+2018-12-06 16:37:31.099  WARN 6524 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:37:31.125  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:37:31.126  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:37:31.126  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:37:31.127  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:37:31.127  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:37:31.127  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:37:31.127  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:37:31.128  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:37:31.128  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:37:31.128  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:37:31.131  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:37:31.131  INFO 6524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:37:31.155  INFO 6524 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:37:31.156  INFO 6524 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:37:31.172  INFO 6524 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:37:31.569  INFO 6524 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:37:31.584  INFO 6524 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:37:31.584  INFO 6524 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:37:31.584  INFO 6524 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:37:31.642  INFO 6524 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-12-06 16:37:31.644  INFO 6524 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-06 16:37:31.652  INFO 6524 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-06 16:37:31.754  INFO 6524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-06 16:37:31.758  INFO 6524 --- [main] org.rakesh.SpringJpaApplication          : Started SpringJpaApplication in 5.449 seconds (JVM running for 5.841)
+2018-12-06 16:37:31.761  INFO 6524 --- [main] org.rakesh.SpringJpaApplication          : Started the application
+2018-12-06 16:37:31.761  WARN 6524 --- [main] org.rakesh.SpringJpaApplication          : is it working ??
+2018-12-06 16:37:48.826  INFO 6524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-06 16:37:48.826  INFO 6524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-06 16:37:48.851  INFO 6524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-12-06 16:37:48.930  INFO 6524 --- [http-nio-8080-exec-1] org.rakesh.Employee.EmployeeController   : in get method
+2018-12-06 16:37:48.930  INFO 6524 --- [http-nio-8080-exec-1] org.rakesh.Employee.EmployeeController   : In the get all method
+2018-12-06 16:37:49.000  INFO 6524 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-12-06 16:40:07.403  INFO 7312 --- [main] org.rakesh.SpringJpaApplication          : Starting SpringJpaApplication on TMIC-PCS3023226 with PID 7312 (D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa\target\classes started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:40:07.406  INFO 7312 --- [main] org.rakesh.SpringJpaApplication          : No active profile set, falling back to default profiles: default
+2018-12-06 16:40:07.446  INFO 7312 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14342c2: startup date [Thu Dec 06 16:40:07 IST 2018]; root of context hierarchy
+2018-12-06 16:40:08.746  INFO 7312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9b2a158] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:40:09.307  INFO 7312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-06 16:40:09.330  INFO 7312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-06 16:40:09.330  INFO 7312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-06 16:40:09.339  INFO 7312 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin/client;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin;D:/GEGDC/RN551626/Java/JRE1.8.0-151/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\GEGDC\RN551626\nodejs\;D:\GEGDC\RN551626\Cloud Foundry;C:\Program Files\Cloud Foundry;D:\GEGDC\RN551626\Softwares\Cloud Foundry;D:\GEGDC\RN551626\Softwares\GIT1\cmd;D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;D:\GEGDC\RN551626\Softwares\Git\bin;D:\GEGDC\RN551626\Softwares\Git\cmd;D:\GEGDC\RN551626\Softwares\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32\sts-bundle\sts-3.9.2.RELEASE;;.]
+2018-12-06 16:40:09.452  INFO 7312 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-06 16:40:09.452  INFO 7312 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2006 ms
+2018-12-06 16:40:10.151  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-06 16:40:10.151  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-06 16:40:10.151  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-06 16:40:10.151  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-06 16:40:10.152  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-06 16:40:10.152  INFO 7312 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-06 16:40:10.152  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-06 16:40:10.152  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sampleFilter' to: [/*]
+2018-12-06 16:40:10.152  INFO 7312 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-06 16:40:10.251  INFO 7312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:40:10.358  INFO 7312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:40:10.403  INFO 7312 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:40:10.426  INFO 7312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:40:10.493  INFO 7312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:40:10.494  INFO 7312 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:40:10.553  INFO 7312 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:40:10.660  INFO 7312 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:40:10.761  INFO 7312 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.rakesh.SpringJpaApplication.main(SpringJpaApplication.java:16) ~[classes/:na]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 44 common frames omitted
+
+2018-12-06 16:40:10.763  INFO 7312 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@15d659c
+2018-12-06 16:40:11.120  INFO 7312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:40:11.600  INFO 7312 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6ce305cb-a07b-4ce9-a177-c2c092086026
+
+2018-12-06 16:40:11.714  INFO 7312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bcd059, org.springframework.security.web.context.SecurityContextPersistenceFilter@d18d80, org.springframework.security.web.header.HeaderWriterFilter@9beb51, org.springframework.security.web.csrf.CsrfFilter@1b5b890, org.springframework.security.web.authentication.logout.LogoutFilter@fb5b59, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b3aa0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@247647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a87366, org.springframework.security.web.session.SessionManagementFilter@f154cc, org.springframework.security.web.access.ExceptionTranslationFilter@48ade1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@358613]
+2018-12-06 16:40:11.788  INFO 7312 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:40:12.037  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14342c2: startup date [Thu Dec 06 16:40:07 IST 2018]; root of context hierarchy
+2018-12-06 16:40:12.084  WARN 7312 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:40:12.095  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:40:12.096  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:40:12.096  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:40:12.097  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:40:12.097  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:40:12.098  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:40:12.098  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:40:12.098  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:40:12.099  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:40:12.099  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:40:12.101  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:40:12.102  INFO 7312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:40:12.127  INFO 7312 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:40:12.127  INFO 7312 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:40:12.143  INFO 7312 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:40:12.522  INFO 7312 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:40:12.537  INFO 7312 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:40:12.537  INFO 7312 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:40:12.537  INFO 7312 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:40:12.596  INFO 7312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-12-06 16:40:12.598  INFO 7312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-06 16:40:12.605  INFO 7312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-06 16:40:12.656  INFO 7312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-06 16:40:12.659  INFO 7312 --- [main] org.rakesh.SpringJpaApplication          : Started SpringJpaApplication in 5.589 seconds (JVM running for 5.946)
+2018-12-06 16:40:12.662  INFO 7312 --- [main] org.rakesh.SpringJpaApplication          : Started the application
+2018-12-06 16:40:12.662  WARN 7312 --- [main] org.rakesh.SpringJpaApplication          : is it working ??
+2018-12-06 16:40:20.078  INFO 7312 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-06 16:40:20.078  INFO 7312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-06 16:40:20.111  INFO 7312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-12-06 16:40:20.167  INFO 7312 --- [http-nio-8080-exec-1] org.rakesh.Employee.EmployeeController   : In id method
+2018-12-06 16:45:26.066  INFO 9620 --- [main] org.rakesh.SpringJpaApplicationTests     : Starting SpringJpaApplicationTests on TMIC-PCS3023226 with PID 9620 (started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:45:26.066  INFO 9620 --- [main] org.rakesh.SpringJpaApplicationTests     : No active profile set, falling back to default profiles: default
+2018-12-06 16:45:26.094  INFO 9620 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:45:26 IST 2018]; root of context hierarchy
+2018-12-06 16:45:27.380  INFO 9620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c8df74b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:45:27.688  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:45:27.788  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:45:27.841  INFO 9620 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:45:27.857  INFO 9620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:45:27.932  INFO 9620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:45:27.933  INFO 9620 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:45:27.976  INFO 9620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:45:28.126  INFO 9620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:45:28.236  INFO 9620 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) ~[surefire-booter-2.21.0.jar:2.21.0]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 70 common frames omitted
+
+2018-12-06 16:45:28.238  INFO 9620 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ad1bae
+2018-12-06 16:45:28.701  INFO 9620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:45:29.162  INFO 9620 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 84d24971-495f-420b-991e-ba24bea7844e
+
+2018-12-06 16:45:29.291  INFO 9620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b82ddf, org.springframework.security.web.context.SecurityContextPersistenceFilter@11be8aa, org.springframework.security.web.header.HeaderWriterFilter@19b98cb, org.springframework.security.web.csrf.CsrfFilter@7163e3, org.springframework.security.web.authentication.logout.LogoutFilter@17ca28e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11f60a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14ecc67, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bf82d9, org.springframework.security.web.session.SessionManagementFilter@d70e9a, org.springframework.security.web.access.ExceptionTranslationFilter@7a1371, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10cd36d]
+2018-12-06 16:45:29.551  INFO 9620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:45:29.735  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:45:26 IST 2018]; root of context hierarchy
+2018-12-06 16:45:29.777  WARN 9620 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:45:29.811  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:45:29.812  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:45:29.813  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:45:29.813  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:45:29.814  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:45:29.814  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public void org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:45:29.814  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public void org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:45:29.814  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public void org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:45:29.815  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:45:29.815  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:45:29.817  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:45:29.818  INFO 9620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:45:29.844  INFO 9620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:45:29.845  INFO 9620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:45:29.862  INFO 9620 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:45:30.498  INFO 9620 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:45:30.535  INFO 9620 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:45:30.535  INFO 9620 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:45:30.535  INFO 9620 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:45:30.714  INFO 9620 --- [main] org.rakesh.SpringJpaApplicationTests     : Started SpringJpaApplicationTests in 4.892 seconds (JVM running for 5.779)
+2018-12-06 16:45:30.828  INFO 9620 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:45:26 IST 2018]; root of context hierarchy
+2018-12-06 16:45:30.831  INFO 9620 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:45:30.832  INFO 9620 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-06 16:45:30.836  INFO 9620 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-06 16:46:25.705  INFO 2800 --- [main] org.rakesh.SpringJpaApplication          : Starting SpringJpaApplication on TMIC-PCS3023226 with PID 2800 (D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa\target\classes started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:46:25.708  INFO 2800 --- [main] org.rakesh.SpringJpaApplication          : No active profile set, falling back to default profiles: default
+2018-12-06 16:46:25.746  INFO 2800 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@dcc9fe: startup date [Thu Dec 06 16:46:25 IST 2018]; root of context hierarchy
+2018-12-06 16:46:26.930  INFO 2800 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4524fc0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:46:27.386  INFO 2800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-06 16:46:27.407  INFO 2800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-06 16:46:27.407  INFO 2800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-06 16:46:27.415  INFO 2800 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin/client;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin;D:/GEGDC/RN551626/Java/JRE1.8.0-151/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\GEGDC\RN551626\nodejs\;D:\GEGDC\RN551626\Cloud Foundry;C:\Program Files\Cloud Foundry;D:\GEGDC\RN551626\Softwares\Cloud Foundry;D:\GEGDC\RN551626\Softwares\GIT1\cmd;D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;D:\GEGDC\RN551626\Softwares\Git\bin;D:\GEGDC\RN551626\Softwares\Git\cmd;D:\GEGDC\RN551626\Softwares\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32\sts-bundle\sts-3.9.2.RELEASE;;.]
+2018-12-06 16:46:27.551  INFO 2800 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-06 16:46:27.551  INFO 2800 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1805 ms
+2018-12-06 16:46:28.162  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-06 16:46:28.163  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-06 16:46:28.163  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-06 16:46:28.163  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-06 16:46:28.163  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-06 16:46:28.164  INFO 2800 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-06 16:46:28.164  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-06 16:46:28.164  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sampleFilter' to: [/*]
+2018-12-06 16:46:28.164  INFO 2800 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-06 16:46:28.241  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:46:28.356  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:46:28.402  INFO 2800 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:46:28.417  INFO 2800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:46:28.478  INFO 2800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:46:28.480  INFO 2800 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:46:28.551  INFO 2800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:46:28.641  INFO 2800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:46:28.742  INFO 2800 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.rakesh.SpringJpaApplication.main(SpringJpaApplication.java:16) ~[classes/:na]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 44 common frames omitted
+
+2018-12-06 16:46:28.744  INFO 2800 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@17aa898
+2018-12-06 16:46:29.099  INFO 2800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:46:29.495  INFO 2800 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 25887f33-8650-4e58-bbf8-c5437993e64f
+
+2018-12-06 16:46:29.612  INFO 2800 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f0c5e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fa450f, org.springframework.security.web.header.HeaderWriterFilter@1af72d5, org.springframework.security.web.csrf.CsrfFilter@108b66a, org.springframework.security.web.authentication.logout.LogoutFilter@191fa02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b3be1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fd504, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@82b202, org.springframework.security.web.session.SessionManagementFilter@d96578, org.springframework.security.web.access.ExceptionTranslationFilter@1b89ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10a6eb9]
+2018-12-06 16:46:29.681  INFO 2800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:46:29.920  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@dcc9fe: startup date [Thu Dec 06 16:46:25 IST 2018]; root of context hierarchy
+2018-12-06 16:46:29.961  WARN 2800 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:46:29.993  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:46:29.993  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:46:29.994  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:46:29.994  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:46:29.994  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public void org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:46:29.994  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public void org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:46:29.995  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public void org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:46:29.995  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:46:29.995  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:46:29.996  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:46:29.998  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:46:29.999  INFO 2800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:46:30.037  INFO 2800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:46:30.037  INFO 2800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:46:30.052  INFO 2800 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:46:30.386  INFO 2800 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:46:30.395  INFO 2800 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:46:30.396  INFO 2800 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:46:30.397  INFO 2800 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:46:30.473  INFO 2800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-12-06 16:46:30.475  INFO 2800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-06 16:46:30.482  INFO 2800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-06 16:46:30.497 ERROR 2800 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:261) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.rakesh.SpringJpaApplication.main(SpringJpaApplication.java:16) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_151]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_151]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_151]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_151]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_151]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 14 common frames omitted
+
+2018-12-06 16:46:30.499  INFO 2800 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-12-06 16:46:30.582  INFO 2800 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-12-06 16:46:30.583 ERROR 2800 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-12-06 16:46:30.583  INFO 2800 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@dcc9fe: startup date [Thu Dec 06 16:46:25 IST 2018]; root of context hierarchy
+2018-12-06 16:46:30.583  INFO 2800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-12-06 16:46:30.583  INFO 2800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-12-06 16:46:30.583  INFO 2800 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:46:30.583  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-06 16:46:30.583  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-06 16:48:24.146  INFO 10436 --- [main] org.rakesh.SpringJpaApplication          : Starting SpringJpaApplication on TMIC-PCS3023226 with PID 10436 (D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa\target\classes started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:48:24.149  INFO 10436 --- [main] org.rakesh.SpringJpaApplication          : No active profile set, falling back to default profiles: default
+2018-12-06 16:48:24.205  INFO 10436 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@107a0d6: startup date [Thu Dec 06 16:48:24 IST 2018]; root of context hierarchy
+2018-12-06 16:48:25.412  INFO 10436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6342297] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:48:25.873  INFO 10436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-06 16:48:25.896  INFO 10436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-06 16:48:25.896  INFO 10436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-06 16:48:25.904  INFO 10436 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin/client;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin;D:/GEGDC/RN551626/Java/JRE1.8.0-151/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\GEGDC\RN551626\nodejs\;D:\GEGDC\RN551626\Cloud Foundry;C:\Program Files\Cloud Foundry;D:\GEGDC\RN551626\Softwares\Cloud Foundry;D:\GEGDC\RN551626\Softwares\GIT1\cmd;D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;D:\GEGDC\RN551626\Softwares\Git\bin;D:\GEGDC\RN551626\Softwares\Git\cmd;D:\GEGDC\RN551626\Softwares\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32\sts-bundle\sts-3.9.2.RELEASE;;.]
+2018-12-06 16:48:26.034  INFO 10436 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-06 16:48:26.034  INFO 10436 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1829 ms
+2018-12-06 16:48:26.647  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-06 16:48:26.648  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-06 16:48:26.648  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-06 16:48:26.648  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-06 16:48:26.649  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-06 16:48:26.649  INFO 10436 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-06 16:48:26.649  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-06 16:48:26.649  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sampleFilter' to: [/*]
+2018-12-06 16:48:26.649  INFO 10436 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-06 16:48:26.726  INFO 10436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:48:26.829  INFO 10436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:48:26.871  INFO 10436 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:48:26.887  INFO 10436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:48:26.958  INFO 10436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:48:26.959  INFO 10436 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:48:27.002  INFO 10436 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:48:27.124  INFO 10436 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:48:27.228  INFO 10436 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.rakesh.SpringJpaApplication.main(SpringJpaApplication.java:16) ~[classes/:na]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 44 common frames omitted
+
+2018-12-06 16:48:27.229  INFO 10436 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1ebbdf4
+2018-12-06 16:48:27.583  INFO 10436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:48:28.062  INFO 10436 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3b123c47-acdd-4691-be56-ad01511baad0
+
+2018-12-06 16:48:28.162  INFO 10436 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@618775, org.springframework.security.web.context.SecurityContextPersistenceFilter@18989fa, org.springframework.security.web.header.HeaderWriterFilter@60a7a1, org.springframework.security.web.csrf.CsrfFilter@1789580, org.springframework.security.web.authentication.logout.LogoutFilter@115a964, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@168f998, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1282e98, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ea8994, org.springframework.security.web.session.SessionManagementFilter@1516600, org.springframework.security.web.access.ExceptionTranslationFilter@cfecf3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f4cbe1]
+2018-12-06 16:48:28.230  INFO 10436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:48:28.387  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@107a0d6: startup date [Thu Dec 06 16:48:24 IST 2018]; root of context hierarchy
+2018-12-06 16:48:28.428  WARN 10436 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:48:28.455  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:48:28.455  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:48:28.456  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:48:28.456  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:48:28.456  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:48:28.457  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public void org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:48:28.457  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public void org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:48:28.457  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public void org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:48:28.457  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:48:28.458  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:48:28.460  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:48:28.461  INFO 10436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:48:28.494  INFO 10436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:48:28.494  INFO 10436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:48:28.535  INFO 10436 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:48:28.858  INFO 10436 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:48:28.868  INFO 10436 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:48:28.868  INFO 10436 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:48:28.869  INFO 10436 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:48:28.947  INFO 10436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-12-06 16:48:28.949  INFO 10436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-06 16:48:28.956  INFO 10436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-06 16:48:28.986  INFO 10436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-06 16:48:28.989  INFO 10436 --- [main] org.rakesh.SpringJpaApplication          : Started SpringJpaApplication in 5.17 seconds (JVM running for 5.509)
+2018-12-06 16:48:28.991  INFO 10436 --- [main] org.rakesh.SpringJpaApplication          : Started the application
+2018-12-06 16:48:28.991  WARN 10436 --- [main] org.rakesh.SpringJpaApplication          : is it working ??
+2018-12-06 16:49:09.078  INFO 10436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-06 16:49:09.078  INFO 10436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-06 16:49:09.105  INFO 10436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-12-06 16:49:29.478  INFO 10436 --- [http-nio-8080-exec-3] org.rakesh.Employee.EmployeeController   : in get method
+2018-12-06 16:49:29.478  INFO 10436 --- [http-nio-8080-exec-3] org.rakesh.Employee.EmployeeController   : In the get all method
+2018-12-06 16:49:29.530  INFO 10436 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-12-06 16:50:20.142  INFO 4792 --- [main] org.rakesh.SpringJpaApplicationTests     : Starting SpringJpaApplicationTests on TMIC-PCS3023226 with PID 4792 (started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:50:20.143  INFO 4792 --- [main] org.rakesh.SpringJpaApplicationTests     : No active profile set, falling back to default profiles: default
+2018-12-06 16:50:20.172  INFO 4792 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:50:20 IST 2018]; root of context hierarchy
+2018-12-06 16:50:21.453  INFO 4792 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9668addd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:50:21.775  INFO 4792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:50:21.883  INFO 4792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:50:21.936  INFO 4792 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:50:21.955  INFO 4792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:50:22.028  INFO 4792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:50:22.030  INFO 4792 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:50:22.075  INFO 4792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:50:22.250  INFO 4792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:50:22.359  INFO 4792 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) ~[surefire-booter-2.21.0.jar:2.21.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) ~[surefire-booter-2.21.0.jar:2.21.0]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 70 common frames omitted
+
+2018-12-06 16:50:22.362  INFO 4792 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@227eb2
+2018-12-06 16:50:22.790  INFO 4792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:50:23.294  INFO 4792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:50:23.570  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:50:20 IST 2018]; root of context hierarchy
+2018-12-06 16:50:23.622  WARN 4792 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:50:23.654  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:50:23.655  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:50:23.656  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:50:23.656  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:50:23.656  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public void org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:50:23.656  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public void org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:50:23.657  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public void org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:50:23.657  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:50:23.657  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:50:23.658  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:50:23.660  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:50:23.661  INFO 4792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:50:23.698  INFO 4792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:50:23.698  INFO 4792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:50:23.717  INFO 4792 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:50:24.556  INFO 4792 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5fffdfee-76d3-4dbc-9758-cc6816096079
+
+2018-12-06 16:50:24.716  INFO 4792 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dbfdb1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1814bbe, org.springframework.security.web.header.HeaderWriterFilter@de8e00, org.springframework.security.web.csrf.CsrfFilter@32dca2, org.springframework.security.web.authentication.logout.LogoutFilter@1f3426f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@135aef2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1c71, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f2266c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c2279c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b196d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56f41a, org.springframework.security.web.session.SessionManagementFilter@1825dbe, org.springframework.security.web.access.ExceptionTranslationFilter@1dd7887, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1499c6f]
+2018-12-06 16:50:24.755  INFO 4792 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:50:24.771  INFO 4792 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:50:24.772  INFO 4792 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:50:24.773  INFO 4792 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:50:24.881  INFO 4792 --- [main] org.rakesh.SpringJpaApplicationTests     : Started SpringJpaApplicationTests in 4.992 seconds (JVM running for 5.737)
+2018-12-06 16:50:25.013  INFO 4792 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@add4fb: startup date [Thu Dec 06 16:50:20 IST 2018]; root of context hierarchy
+2018-12-06 16:50:25.019  INFO 4792 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:50:25.019  INFO 4792 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-06 16:50:25.024  INFO 4792 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-06 16:50:44.629  INFO 10408 --- [main] org.rakesh.SpringJpaApplication          : Starting SpringJpaApplication on TMIC-PCS3023226 with PID 10408 (D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa\target\classes started by RN551626 in D:\GEGDC\RN551626\WORKSPACEspring\spring-jpa)
+2018-12-06 16:50:44.632  INFO 10408 --- [main] org.rakesh.SpringJpaApplication          : No active profile set, falling back to default profiles: default
+2018-12-06 16:50:44.670  INFO 10408 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@dcc9fe: startup date [Thu Dec 06 16:50:44 IST 2018]; root of context hierarchy
+2018-12-06 16:50:45.876  INFO 10408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ae039060] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-06 16:50:46.331  INFO 10408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-06 16:50:46.352  INFO 10408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-06 16:50:46.353  INFO 10408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-06 16:50:46.361  INFO 10408 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin/client;D:/GEGDC/RN551626/Java/JRE1.8.0-151/bin;D:/GEGDC/RN551626/Java/JRE1.8.0-151/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\GEGDC\RN551626\nodejs\;D:\GEGDC\RN551626\Cloud Foundry;C:\Program Files\Cloud Foundry;D:\GEGDC\RN551626\Softwares\Cloud Foundry;D:\GEGDC\RN551626\Softwares\GIT1\cmd;D:\GEGDC\RN551626\Java\jdk1.8.0_151\bin;D:\GEGDC\RN551626\Softwares\Git\bin;D:\GEGDC\RN551626\Softwares\Git\cmd;D:\GEGDC\RN551626\Softwares\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32\sts-bundle\sts-3.9.2.RELEASE;;.]
+2018-12-06 16:50:46.471  INFO 10408 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-06 16:50:46.471  INFO 10408 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1801 ms
+2018-12-06 16:50:47.104  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-06 16:50:47.105  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-06 16:50:47.105  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-06 16:50:47.105  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-06 16:50:47.105  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-06 16:50:47.106  INFO 10408 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-06 16:50:47.106  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-06 16:50:47.106  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sampleFilter' to: [/*]
+2018-12-06 16:50:47.106  INFO 10408 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-06 16:50:47.182  INFO 10408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-06 16:50:47.275  INFO 10408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-06 16:50:47.326  INFO 10408 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:50:47.342  INFO 10408 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-06 16:50:47.404  INFO 10408 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-06 16:50:47.407  INFO 10408 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-12-06 16:50:47.449  INFO 10408 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-06 16:50:47.567  INFO 10408 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-12-06 16:50:47.666  INFO 10408 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.rakesh.SpringJpaApplication.main(SpringJpaApplication.java:16) ~[classes/:na]
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269) ~[postgresql-42.2.5.jar:42.2.5]
+	... 44 common frames omitted
+
+2018-12-06 16:50:47.668  INFO 10408 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1311277
+2018-12-06 16:50:48.020  INFO 10408 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:50:48.327  INFO 10408 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:50:48.524  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@dcc9fe: startup date [Thu Dec 06 16:50:44 IST 2018]; root of context hierarchy
+2018-12-06 16:50:48.571  WARN 10408 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-06 16:50:48.597  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/form]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.form()
+2018-12-06 16:50:48.598  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Details]}" onto public void org.rakesh.Employee.EmployeeController.dbdetails()
+2018-12-06 16:50:48.598  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.rakesh.Employee.EmployeeController.getAllEmployees()
+2018-12-06 16:50:48.599  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}]}" onto public org.springframework.http.ResponseEntity<?> org.rakesh.Employee.EmployeeController.getEmployee(int)
+2018-12-06 16:50:48.599  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees],methods=[POST]}" onto public void org.rakesh.Employee.EmployeeController.addEmployee(org.rakesh.Employee.Employee)
+2018-12-06 16:50:48.599  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[PUT]}" onto public void org.rakesh.Employee.EmployeeController.updateEmployee(org.rakesh.Employee.Employee,int)
+2018-12-06 16:50:48.599  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Employees/{id}],methods=[DELETE]}" onto public void org.rakesh.Employee.EmployeeController.deleteEmployee(int)
+2018-12-06 16:50:48.600  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.rakesh.Employee.EmployeeController.sayHi()
+2018-12-06 16:50:48.600  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCount],methods=[GET]}" onto public java.lang.String org.rakesh.resttemplates.ThirdPartyApi.getNumberOfEmployees()
+2018-12-06 16:50:48.600  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greetings]}" onto public java.lang.String org.rakesh.webapplication.Greetings.form()
+2018-12-06 16:50:48.602  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-06 16:50:48.603  INFO 10408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:50:48.632  INFO 10408 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:50:48.632  INFO 10408 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-06 16:50:48.648  INFO 10408 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionController
+2018-12-06 16:50:49.171  INFO 10408 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 25047fad-87c8-4d04-a837-488c95e3d617
+
+2018-12-06 16:50:49.312  INFO 10408 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@536164, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dc557, org.springframework.security.web.header.HeaderWriterFilter@6d1ff3, org.springframework.security.web.csrf.CsrfFilter@a1146d, org.springframework.security.web.authentication.logout.LogoutFilter@1b4ed71, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1889154, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@163bb40, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f77dfa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17884d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8e87a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57b017, org.springframework.security.web.session.SessionManagementFilter@1c6feea, org.springframework.security.web.access.ExceptionTranslationFilter@16984c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1896d3b]
+2018-12-06 16:50:49.336  INFO 10408 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-06 16:50:49.346  INFO 10408 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:50:49.347  INFO 10408 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-06 16:50:49.347  INFO 10408 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-06 16:50:49.423  INFO 10408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-12-06 16:50:49.425  INFO 10408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-06 16:50:49.432  INFO 10408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-06 16:50:49.447 ERROR 10408 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:261) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.rakesh.SpringJpaApplication.main(SpringJpaApplication.java:16) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_151]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_151]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_151]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_151]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_151]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 14 common frames omitted
+
+2018-12-06 16:50:49.449  INFO 10408 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-12-06 16:50:49.457  INFO 10408 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-12-06 16:50:49.459 ERROR 10408 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-12-06 16:50:49.460  INFO 10408 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@dcc9fe: startup date [Thu Dec 06 16:50:44 IST 2018]; root of context hierarchy
+2018-12-06 16:50:49.462  INFO 10408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-12-06 16:50:49.463  INFO 10408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-12-06 16:50:49.464  INFO 10408 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-06 16:50:49.464  INFO 10408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-06 16:50:49.469  INFO 10408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-06 16:51:21.919  INFO 10436 --- [http-nio-8080-exec-5] org.rakesh.Employee.EmployeeController   : in get method
+2018-12-06 16:51:21.919  INFO 10436 --- [http-nio-8080-exec-5] org.rakesh.Employee.EmployeeController   : In the get all method
